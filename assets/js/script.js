@@ -246,7 +246,7 @@ const app = {
     loadConfig: function () {
         this.isRandom = this.config.isRandom
         this.isRepeat = this.config.isRepeat
-        this.currentIndex = this.config.currentIndex
+        this.currentIndex = this.config.currentIndex || 0
     },
     nextSong: function () {
         this.currentIndex++
