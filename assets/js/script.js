@@ -71,20 +71,6 @@ const app = {
             path: './assets/music/tragedy-eternity.mp3',
             img: './assets/img/Photos.png',
             id: 'id-6'
-        },
-        {
-            name: 'Tragedy Eternity',
-            singer: 'Unknown',
-            path: './assets/music/tragedy-eternity.mp3',
-            img: './assets/img/Photos.png',
-            id: 'id-7'
-        },
-        {
-            name: 'Transparent',
-            singer: 'Unknown',
-            path: './assets/music/transparent.mp3',
-            img: './assets/img/Photos.png',
-            id: 'id-8'
         }
     ],
     setConfig: function (key, value) {
