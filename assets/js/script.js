@@ -176,6 +176,7 @@ const app = {
             } else {
                 _this.nextSong()
             }
+            audio.play()
         }
 
         btnPrev.onclick = function () {
@@ -184,6 +185,7 @@ const app = {
             } else {
                 _this.previousSong()
             }
+            audio.play()
         }
 
         btnRandom.onclick = function (event) {
@@ -238,10 +240,13 @@ const app = {
         }
         $(`.song[data-id="${this.currentSong.id}"]`).classList.add('active')
         this.scrollToActiveSong()
+
+        this.setConfig('currentIndex', this.currentIndex)
     },
     loadConfig: function () {
         this.isRandom = this.config.isRandom
         this.isRepeat = this.config.isRepeat
+        this.currentIndex = this.config.currentIndex
     },
     nextSong: function () {
         this.currentIndex++
